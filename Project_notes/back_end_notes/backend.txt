@@ -1,0 +1,30 @@
+start with-> node ./index.js
+
+[0 -5hr] front end
+ 
+in start 1hr [5-6]
+{
+     imported depencies
+     multer for disk sorage 
+     db with atlas :password savyas02 id :savyas02
+     
+     @using multer to acess storage and store images in disk upload/images folder generating a unique    name 
+     app.use('/images',express.static('upload/images'))// after this we will get /upload/images  at /images endpoint
+
+     @we created '/upload' to upload imaged in upload/images folder
+     @Created Product schema
+     @ created users schema
+
+     @'/addproduct'{ first it generate concecutive id bt fetching id of last product then using that id to generate next id and finally storing in database
+    
+
+     }
+   
+     @'/removeproduct'  find product by id which we get in req.body and then removing from db
+     
+     @'/allproducts' to display all products by storing them in a array and display on frontend
+   
+     @'/login,signup' to store and check user data
+
+      @'/newcollection' endpoint for newcollection display on frontend
+}

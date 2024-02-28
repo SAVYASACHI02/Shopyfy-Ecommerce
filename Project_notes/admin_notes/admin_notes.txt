@@ -1,0 +1,53 @@
+created by vite
+to run->npm run dev
+
+#ADD_product info {
+
+    we call to cakend api to upload image and get image url then merge it with other data we got from input fields and then add it in product db
+
+
+
+
+   This React component, named AddProduct, is responsible for creating a form to add a new product. Here's a breakdown of its functionality and structure:
+Component Structure:
+
+    Imports:
+        upload_area SVG image file (presumably an upload icon).
+        useState hook from React.
+        Stylesheet import for AddProduct.css.
+
+    Component Function:
+        Functional component named AddProduct.
+
+    State:
+        image: State variable to store the selected image file.
+        productDetails: State object to store product details including name, image, category, new price, and old price.
+
+    Event Handlers:
+        imageHandler: Handles the selection of an image file and updates the image state.
+        changeHandler: Handles changes in the input fields for product details and updates the productDetails state accordingly.
+        Add_Product: Handles the submission of the product form. It uploads the image file to the server, then sends a POST request to add the product with its details.
+
+Detailed Notes:
+
+    The component renders a form for adding a new product with fields for product title, price, offer price, product category, and an image upload option.
+    Input fields are controlled components, meaning their values are controlled by React state.
+    The image upload functionality uses an <input type="file"> element hidden behind an image, allowing users to select an image file from their device.
+    When an image is selected, it's displayed as a thumbnail preview using URL.createObjectURL().
+    The Add_Product function is an asynchronous function:
+        It first uploads the selected image file to the server using fetch and FormData.
+        Upon successful upload, it receives the response data containing the image URL.
+        If the upload is successful (responseData.success), the product object's image field is updated with the received image URL.
+        It then sends a POST request to add the product details along with the image URL to the server.
+        Finally, it displays an alert based on the success of adding the product.
+    The product category is selected via a dropdown (<select>) element.
+    The component relies on CSS classes defined in AddProduct.css for styling.
+}
+
+#List_Product info{ 
+
+
+
+
+
+}

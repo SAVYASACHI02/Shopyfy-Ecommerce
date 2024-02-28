@@ -1,0 +1,74 @@
+To start -> move to front-end folder and then npm run start
+
+@in our project we have App.js where we defined routes
+{
+   '/' main shop route
+   '/mens' mens section render shop_category, prop passed as men so that item        can be matched[category in product info ] and displayed 
+  '/womens' mens section render shop_category, prop passed as women so that item        can be matched and displayed
+    '/kids' mens section render shop_category, prop passed as kids so that item        can be matched and displayed
+    '/product ' display product according to /product.id
+    'cart' send us to cart page where we have aded products
+    '/login' Login page render login signup
+
+}
+
+@we have index.js as main file which is wrapped in shop context procvider so we can use shop context in child functions
+
+@Components-->
+[
+we have a component folder 
+
+@assets folder->here we have assets folder with product details and icons and images
+
+@breadcrum->its like location of product like path at top
+
+@cartItems-> it is used to display item in cart we use shop context to get detail of item and show it it also has add and remove cart item functionality
+
+@description--> description about our ecommerce website 
+
+@Footer-> footer of website shows whatsappp,insta accound link'
+
+@Hero->it is used to display hero banner on Shop page
+
+@Item-> used to display individual item card with pic ,price
+
+@navbar-> navigation bar for smooth  navigation has buttons for login,cart , men ,women,kids section
+
+@new_collection-> display new collection section on shop page
+
+@offers-> offers to display on shop page
+
+@popular->to display popular products on shop page
+
+@product_display->to show product when we click on any product on product page
+
+@related_products-> show products related to our product on products page 
+
+]
+
+@Context->
+{
+it store product info and has functions of adding and removing product from cart
+}
+
+
+@Pages-> where our route direct
+
+{
+     @cart page for alll cart info
+     @loginsignup login page 
+     @product disply->Display produuct
+      @Shop-> main page of website
+     @shop category-> women,men,kids section
+}
+
+our website is responsive for 1280px,1024px ,800px ,500px width by ,edia query
+
+we are using state varible to maintain login/signup page 
+also we are generating a auth token and storing it in local storage on signup/login and using that to control login/logout functionality
+
+now we are also importing data from backend to display product
+
+
+
+
